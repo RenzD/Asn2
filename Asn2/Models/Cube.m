@@ -5,9 +5,9 @@
 //  Created by Renz on 3/11/19.
 //  Copyright © 2019 Renz. All rights reserved.
 //
-#import "NorthWall.h"
+#import "Cube.h"
 
-@implementation NorthWall
+@implementation Cube
 
 const Vertex Vertices[] = {
     // Front
@@ -88,7 +88,7 @@ const GLubyte Indices[] = {
 
 - (instancetype)initWithShader:(GLKBaseEffect *)shader {
     
-    if ((self = [super initWithName:"square" shader:shader
+    if ((self = [super initWithName:"Cube" shader:shader
                            vertices:(Vertex *)Vertices
                         vertexCount:sizeof(Vertices) / sizeof(Vertices[0])])) {
         

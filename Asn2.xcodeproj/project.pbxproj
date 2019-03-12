@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292C981D223851BB00105569 /* WestFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 292C981C223851BB00105569 /* WestFace.m */; };
+		292C98202238521C00105569 /* NorthFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 292C981F2238521C00105569 /* NorthFace.m */; };
+		292C98232238526700105569 /* SouthFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 292C98222238526700105569 /* SouthFace.m */; };
+		292C98262238527300105569 /* EastFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 292C98252238527300105569 /* EastFace.m */; };
 		29EAF6E02237529C00487517 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF6DF2237529C00487517 /* AppDelegate.m */; };
 		29EAF6E32237529C00487517 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF6E22237529C00487517 /* ViewController.m */; };
 		29EAF6E62237529C00487517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF6E42237529C00487517 /* Main.storyboard */; };
@@ -17,8 +21,9 @@
 		29EAF7032237529E00487517 /* Asn2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7022237529E00487517 /* Asn2UITests.m */; };
 		29EAF7162237556C00487517 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7152237556C00487517 /* Node.m */; };
 		29EAF73522375EF300487517 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF73422375EF300487517 /* TestScene.m */; };
-		29EAF7392237688400487517 /* NorthWall.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7382237688400487517 /* NorthWall.m */; };
+		29EAF7392237688400487517 /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7382237688400487517 /* Cube.m */; };
 		29EAF7402237837200487517 /* dungeon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF73F2237837200487517 /* dungeon_01.png */; };
+		29EBC592223858230031A9AF /* TopFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EBC591223858230031A9AF /* TopFace.m */; };
 		29F046392237A1B700BC965A /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F046372237A1B600BC965A /* Director.m */; };
 		29F0463C2237A2DA00BC965A /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29F0463A2237A2DA00BC965A /* SimpleFragment.glsl */; };
 		29F0463D2237A2DA00BC965A /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29F0463B2237A2DA00BC965A /* SimpleVertex.glsl */; };
@@ -44,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		292C981B223851BB00105569 /* WestFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WestFace.h; sourceTree = "<group>"; };
+		292C981C223851BB00105569 /* WestFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WestFace.m; sourceTree = "<group>"; };
+		292C981E2238521C00105569 /* NorthFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NorthFace.h; sourceTree = "<group>"; };
+		292C981F2238521C00105569 /* NorthFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NorthFace.m; sourceTree = "<group>"; };
+		292C98212238526700105569 /* SouthFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SouthFace.h; sourceTree = "<group>"; };
+		292C98222238526700105569 /* SouthFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SouthFace.m; sourceTree = "<group>"; };
+		292C98242238527300105569 /* EastFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EastFace.h; sourceTree = "<group>"; };
+		292C98252238527300105569 /* EastFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EastFace.m; sourceTree = "<group>"; };
 		29EAF6DB2237529C00487517 /* Asn2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asn2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EAF6DE2237529C00487517 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29EAF6DF2237529C00487517 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,9 +78,11 @@
 		29EAF717223755C600487517 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		29EAF73322375EF300487517 /* TestScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
 		29EAF73422375EF300487517 /* TestScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
-		29EAF7372237688400487517 /* NorthWall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NorthWall.h; sourceTree = "<group>"; };
-		29EAF7382237688400487517 /* NorthWall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NorthWall.m; sourceTree = "<group>"; };
+		29EAF7372237688400487517 /* Cube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		29EAF7382237688400487517 /* Cube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
 		29EAF73F2237837200487517 /* dungeon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_01.png; sourceTree = "<group>"; };
+		29EBC590223858230031A9AF /* TopFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopFace.h; sourceTree = "<group>"; };
+		29EBC591223858230031A9AF /* TopFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopFace.m; sourceTree = "<group>"; };
 		29F046372237A1B600BC965A /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
 		29F046382237A1B600BC965A /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
 		29F0463A2237A2DA00BC965A /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
@@ -206,9 +221,19 @@
 		29EAF7362237682D00487517 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				29EAF7372237688400487517 /* NorthWall.h */,
-				29EAF7382237688400487517 /* NorthWall.m */,
 				29EAF73F2237837200487517 /* dungeon_01.png */,
+				29EAF7372237688400487517 /* Cube.h */,
+				29EAF7382237688400487517 /* Cube.m */,
+				292C981B223851BB00105569 /* WestFace.h */,
+				292C981C223851BB00105569 /* WestFace.m */,
+				292C981E2238521C00105569 /* NorthFace.h */,
+				292C981F2238521C00105569 /* NorthFace.m */,
+				292C98212238526700105569 /* SouthFace.h */,
+				292C98222238526700105569 /* SouthFace.m */,
+				292C98242238527300105569 /* EastFace.h */,
+				292C98252238527300105569 /* EastFace.m */,
+				29EBC590223858230031A9AF /* TopFace.h */,
+				29EBC591223858230031A9AF /* TopFace.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -351,15 +376,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292C98232238526700105569 /* SouthFace.m in Sources */,
 				29EAF6E32237529C00487517 /* ViewController.m in Sources */,
+				292C981D223851BB00105569 /* WestFace.m in Sources */,
 				29EAF6EE2237529E00487517 /* main.m in Sources */,
 				29F046392237A1B700BC965A /* Director.m in Sources */,
 				29F046432237A32800BC965A /* DisjointSet.cpp in Sources */,
 				29EAF73522375EF300487517 /* TestScene.m in Sources */,
+				292C98202238521C00105569 /* NorthFace.m in Sources */,
+				29EBC592223858230031A9AF /* TopFace.m in Sources */,
 				29EAF6E02237529C00487517 /* AppDelegate.m in Sources */,
-				29EAF7392237688400487517 /* NorthWall.m in Sources */,
+				29EAF7392237688400487517 /* Cube.m in Sources */,
 				29F046422237A32800BC965A /* maze.cpp in Sources */,
 				29EAF7162237556C00487517 /* Node.m in Sources */,
+				292C98262238527300105569 /* EastFace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
