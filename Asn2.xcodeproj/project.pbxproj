@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		29EAF6EE2237529E00487517 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF6ED2237529E00487517 /* main.m */; };
 		29EAF6F82237529E00487517 /* Asn2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF6F72237529E00487517 /* Asn2Tests.m */; };
 		29EAF7032237529E00487517 /* Asn2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7022237529E00487517 /* Asn2UITests.m */; };
+		29EAF7162237556C00487517 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7152237556C00487517 /* Node.m */; };
+		29EAF71D2237565500487517 /* BaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF71A2237565500487517 /* BaseEffect.m */; };
+		29EAF71E2237565500487517 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF71B2237565500487517 /* SimpleFragment.glsl */; };
+		29EAF71F2237565500487517 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF71C2237565500487517 /* SimpleVertex.glsl */; };
+		29EAF7262237572B00487517 /* DisjointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7212237572A00487517 /* DisjointSet.cpp */; };
+		29EAF7282237572B00487517 /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7252237572B00487517 /* maze.cpp */; };
+		29EAF73522375EF300487517 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF73422375EF300487517 /* TestScene.m */; };
+		29EAF7392237688400487517 /* NorthWall.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7382237688400487517 /* NorthWall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,21 @@
 		29EAF6FE2237529E00487517 /* Asn2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Asn2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EAF7022237529E00487517 /* Asn2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Asn2UITests.m; sourceTree = "<group>"; };
 		29EAF7042237529E00487517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EAF7142237556C00487517 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		29EAF7152237556C00487517 /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		29EAF717223755C600487517 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		29EAF7192237565500487517 /* BaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseEffect.h; path = Asn2/BaseEffect.h; sourceTree = SOURCE_ROOT; };
+		29EAF71A2237565500487517 /* BaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseEffect.m; path = Asn2/BaseEffect.m; sourceTree = SOURCE_ROOT; };
+		29EAF71B2237565500487517 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Asn2/SimpleFragment.glsl; sourceTree = SOURCE_ROOT; };
+		29EAF71C2237565500487517 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Asn2/SimpleVertex.glsl; sourceTree = SOURCE_ROOT; };
+		29EAF7212237572A00487517 /* DisjointSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DisjointSet.cpp; path = Asn2/DisjointSet.cpp; sourceTree = SOURCE_ROOT; };
+		29EAF7222237572A00487517 /* maze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = maze.h; path = Asn2/maze.h; sourceTree = SOURCE_ROOT; };
+		29EAF7242237572B00487517 /* DisjointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisjointSet.h; path = Asn2/DisjointSet.h; sourceTree = SOURCE_ROOT; };
+		29EAF7252237572B00487517 /* maze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = maze.cpp; path = Asn2/maze.cpp; sourceTree = SOURCE_ROOT; };
+		29EAF73322375EF300487517 /* TestScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
+		29EAF73422375EF300487517 /* TestScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
+		29EAF7372237688400487517 /* NorthWall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NorthWall.h; sourceTree = "<group>"; };
+		29EAF7382237688400487517 /* NorthWall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NorthWall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +124,11 @@
 		29EAF6DD2237529C00487517 /* Asn2 */ = {
 			isa = PBXGroup;
 			children = (
+				29EAF7362237682D00487517 /* Models */,
+				29EAF73222375EC800487517 /* Main */,
+				29EAF7202237571D00487517 /* MazeStart */,
+				29EAF7182237564500487517 /* Shaders */,
+				29EAF7132237555200487517 /* Nodes */,
 				29EAF6DE2237529C00487517 /* AppDelegate.h */,
 				29EAF6DF2237529C00487517 /* AppDelegate.m */,
 				29EAF6E12237529C00487517 /* ViewController.h */,
@@ -130,6 +158,56 @@
 				29EAF7042237529E00487517 /* Info.plist */,
 			);
 			path = Asn2UITests;
+			sourceTree = "<group>";
+		};
+		29EAF7132237555200487517 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				29EAF7142237556C00487517 /* Node.h */,
+				29EAF7152237556C00487517 /* Node.m */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		29EAF7182237564500487517 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				29EAF717223755C600487517 /* Vertex.h */,
+				29EAF7192237565500487517 /* BaseEffect.h */,
+				29EAF71A2237565500487517 /* BaseEffect.m */,
+				29EAF71B2237565500487517 /* SimpleFragment.glsl */,
+				29EAF71C2237565500487517 /* SimpleVertex.glsl */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		29EAF7202237571D00487517 /* MazeStart */ = {
+			isa = PBXGroup;
+			children = (
+				29EAF7212237572A00487517 /* DisjointSet.cpp */,
+				29EAF7242237572B00487517 /* DisjointSet.h */,
+				29EAF7252237572B00487517 /* maze.cpp */,
+				29EAF7222237572A00487517 /* maze.h */,
+			);
+			path = MazeStart;
+			sourceTree = "<group>";
+		};
+		29EAF73222375EC800487517 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				29EAF73322375EF300487517 /* TestScene.h */,
+				29EAF73422375EF300487517 /* TestScene.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		29EAF7362237682D00487517 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29EAF7372237688400487517 /* NorthWall.h */,
+				29EAF7382237688400487517 /* NorthWall.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,19 +277,25 @@
 				TargetAttributes = {
 					29EAF6DA2237529C00487517 = {
 						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = XP8JJ27LQX;
+						ProvisioningStyle = Automatic;
 					};
 					29EAF6F22237529E00487517 = {
 						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = XP8JJ27LQX;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 29EAF6DA2237529C00487517;
 					};
 					29EAF6FD2237529E00487517 = {
 						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = XP8JJ27LQX;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 29EAF6DA2237529C00487517;
 					};
 				};
 			};
 			buildConfigurationList = 29EAF6D62237529C00487517 /* Build configuration list for PBXProject "Asn2" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -236,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29EAF6EB2237529E00487517 /* LaunchScreen.storyboard in Resources */,
+				29EAF71E2237565500487517 /* SimpleFragment.glsl in Resources */,
+				29EAF71F2237565500487517 /* SimpleVertex.glsl in Resources */,
 				29EAF6E82237529E00487517 /* Assets.xcassets in Resources */,
 				29EAF6E62237529C00487517 /* Main.storyboard in Resources */,
 			);
@@ -262,9 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EAF7282237572B00487517 /* maze.cpp in Sources */,
+				29EAF7262237572B00487517 /* DisjointSet.cpp in Sources */,
 				29EAF6E32237529C00487517 /* ViewController.m in Sources */,
 				29EAF6EE2237529E00487517 /* main.m in Sources */,
+				29EAF73522375EF300487517 /* TestScene.m in Sources */,
 				29EAF6E02237529C00487517 /* AppDelegate.m in Sources */,
+				29EAF7392237688400487517 /* NorthWall.m in Sources */,
+				29EAF7162237556C00487517 /* Node.m in Sources */,
+				29EAF71D2237565500487517 /* BaseEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,10 +530,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP8JJ27LQX;
 				INFOPLIST_FILE = Asn2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renz.Asn2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,10 +545,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP8JJ27LQX;
 				INFOPLIST_FILE = Asn2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renz.Asn2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,11 +560,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP8JJ27LQX;
 				INFOPLIST_FILE = Asn2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renz.Asn2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,11 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP8JJ27LQX;
 				INFOPLIST_FILE = Asn2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renz.Asn2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,11 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP8JJ27LQX;
 				INFOPLIST_FILE = Asn2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renz.Asn2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,11 +603,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP8JJ27LQX;
 				INFOPLIST_FILE = Asn2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renz.Asn2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
