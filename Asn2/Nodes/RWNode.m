@@ -1,15 +1,15 @@
 //
-//  Node.m
-//  Asn2
+//  RWNode.m
+//  HelloOpenGL
 //
-//  Created by Renz on 3/11/19.
-//  Copyright © 2019 Renz. All rights reserved.
+//  Created by Main Account on 8/31/13.
+//  Copyright (c) 2013 Razeware LLC. All rights reserved.
 //
 
-#import "Node.h"
+#import "RWNode.h"
 #import <OpenGLES/ES2/glext.h>
 
-@implementation Node {
+@implementation RWNode {
     const char *_name;
     GLuint _vao;
     GLuint _vertexBuffer;
@@ -18,7 +18,7 @@
 }
 
 - (instancetype)initWithName:(const char *)name shader:(GLKBaseEffect *)shader vertices:(Vertex *)vertices
-                 vertexCount:(unsigned int)vertexCount {
+  vertexCount:(unsigned int)vertexCount {
     if ((self = [self init])) {
         
         // Initialize passed in variables
@@ -31,9 +31,9 @@
         self.rotationZ = 0;
         self.scale = 1.0;
         self.children = [NSMutableArray array];
-        
+      
         if (vertices) {
-            
+      
             // Create the vertex array
             glGenVertexArraysOES(1, &_vao);
             glBindVertexArrayOES(_vao);
@@ -42,18 +42,18 @@
             glGenBuffers(1, &_vertexBuffer);
             glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
             glBufferData(GL_ARRAY_BUFFER, vertexCount * sizeof(Vertex), vertices, GL_STATIC_DRAW);
-            
+
             // Enable vertex attributes and set pointers
             glEnableVertexAttribArray(GLKVertexAttribPosition);
             glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE,
                                   sizeof(Vertex), (const GLvoid *) offsetof(Vertex, Position));
             glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
             glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE,
-                                  sizeof(Vertex), (const GLvoid *) offsetof(Vertex, TexCoord));
+              sizeof(Vertex), (const GLvoid *) offsetof(Vertex, TexCoord));
             glEnableVertexAttribArray(GLKVertexAttribNormal);
             glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE,
                                   sizeof(Vertex), (const GLvoid *) offsetof(Vertex, Normal));
-            
+          
             // Reset bindings
             glBindVertexArrayOES(0);
             glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -64,44 +64,44 @@
 }
 
 - (instancetype)initWithName:(const char *)name shader:(GLKBaseEffect *)shader vertices:(Vertex *)vertices vertexCount:(unsigned int)vertexCount textureName:(NSString *)textureName specularColor:(GLKVector4)specularColor diffuseColor:(GLKVector4)diffuseColor shininess:(float)shininess {
-    if ((self = [self initWithName:name shader:shader vertices:vertices vertexCount:vertexCount])) {
-        [self loadTexture:textureName];
-        self.specularColor = specularColor;
-        self.diffuseColor = diffuseColor;
-        self.shininess = shininess;
-        
-    }
-    return self;
+  if ((self = [self initWithName:name shader:shader vertices:vertices vertexCount:vertexCount])) {
+    [self loadTexture:textureName];
+    self.specularColor = specularColor;
+    self.diffuseColor = diffuseColor;
+    self.shininess = shininess;
+
+  }
+  return self;
 }
 
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix {
-    
+  
     // Render children
     GLKMatrix4 modelViewMatrix = GLKMatrix4Multiply(parentModelViewMatrix, [self modelMatrix]);
-    for (Node * child in self.children) {
+    for (RWNode * child in self.children) {
         [child renderWithParentModelViewMatrix:modelViewMatrix];
     }
-    
+  
     if (_vao == 0) return;
-    
+  
     // Mark the OGL commands
     glPushGroupMarkerEXT(0, _name);
-    {
-        
+    {        
+
         _shader.transform.modelviewMatrix = parentModelViewMatrix;
         _shader.light0.position = GLKVector4Make(0, 0, 1, 0);
-        
+
         // Prepare the effect
         _shader.transform.modelviewMatrix = modelViewMatrix;
         _shader.texture2d0.name = _texture;
         _shader.light0.enabled = GL_TRUE;
         _shader.light0.diffuseColor = _diffuseColor;
-        
+
         _shader.light0.ambientColor = GLKVector4Make(1, 1, 1, 1.0);
         _shader.light0.specularColor = _specularColor;
         _shader.material.shininess = _shininess;
         _shader.lightingType = GLKLightingTypePerPixel;
-        
+      
         [_shader prepareToDraw];
         
         // Bind to the vertex object array for this model
@@ -117,7 +117,7 @@
 }
 
 - (GLKMatrix4)modelMatrix {
-    
+  
     GLKMatrix4 modelMatrix = GLKMatrix4Identity;
     modelMatrix = GLKMatrix4Translate(modelMatrix, self.position.x, self.position.y, self.position.z);
     modelMatrix = GLKMatrix4Rotate(modelMatrix, self.rotationX, 1, 0, 0);
@@ -130,7 +130,7 @@
 
 - (void)updateWithDelta:(GLfloat)aDelta {
     // Update children
-    for (Node * child in self.children) {
+    for (RWNode * child in self.children) {
         [child updateWithDelta:aDelta];
     }
 }

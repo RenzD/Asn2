@@ -16,13 +16,13 @@
 		29EAF6F82237529E00487517 /* Asn2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF6F72237529E00487517 /* Asn2Tests.m */; };
 		29EAF7032237529E00487517 /* Asn2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7022237529E00487517 /* Asn2UITests.m */; };
 		29EAF7162237556C00487517 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7152237556C00487517 /* Node.m */; };
-		29EAF71D2237565500487517 /* BaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF71A2237565500487517 /* BaseEffect.m */; };
 		29EAF71E2237565500487517 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF71B2237565500487517 /* SimpleFragment.glsl */; };
 		29EAF71F2237565500487517 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF71C2237565500487517 /* SimpleVertex.glsl */; };
 		29EAF7262237572B00487517 /* DisjointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7212237572A00487517 /* DisjointSet.cpp */; };
 		29EAF7282237572B00487517 /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7252237572B00487517 /* maze.cpp */; };
 		29EAF73522375EF300487517 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF73422375EF300487517 /* TestScene.m */; };
 		29EAF7392237688400487517 /* NorthWall.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7382237688400487517 /* NorthWall.m */; };
+		29EAF7402237837200487517 /* dungeon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF73F2237837200487517 /* dungeon_01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,6 @@
 		29EAF7142237556C00487517 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		29EAF7152237556C00487517 /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		29EAF717223755C600487517 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
-		29EAF7192237565500487517 /* BaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseEffect.h; path = Asn2/BaseEffect.h; sourceTree = SOURCE_ROOT; };
-		29EAF71A2237565500487517 /* BaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseEffect.m; path = Asn2/BaseEffect.m; sourceTree = SOURCE_ROOT; };
 		29EAF71B2237565500487517 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Asn2/SimpleFragment.glsl; sourceTree = SOURCE_ROOT; };
 		29EAF71C2237565500487517 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Asn2/SimpleVertex.glsl; sourceTree = SOURCE_ROOT; };
 		29EAF7212237572A00487517 /* DisjointSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DisjointSet.cpp; path = Asn2/DisjointSet.cpp; sourceTree = SOURCE_ROOT; };
@@ -74,6 +72,7 @@
 		29EAF73422375EF300487517 /* TestScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
 		29EAF7372237688400487517 /* NorthWall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NorthWall.h; sourceTree = "<group>"; };
 		29EAF7382237688400487517 /* NorthWall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NorthWall.m; sourceTree = "<group>"; };
+		29EAF73F2237837200487517 /* dungeon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_01.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +123,7 @@
 		29EAF6DD2237529C00487517 /* Asn2 */ = {
 			isa = PBXGroup;
 			children = (
+				29EAF73F2237837200487517 /* dungeon_01.png */,
 				29EAF7362237682D00487517 /* Models */,
 				29EAF73222375EC800487517 /* Main */,
 				29EAF7202237571D00487517 /* MazeStart */,
@@ -173,8 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				29EAF717223755C600487517 /* Vertex.h */,
-				29EAF7192237565500487517 /* BaseEffect.h */,
-				29EAF71A2237565500487517 /* BaseEffect.m */,
 				29EAF71B2237565500487517 /* SimpleFragment.glsl */,
 				29EAF71C2237565500487517 /* SimpleVertex.glsl */,
 			);
@@ -324,6 +322,7 @@
 				29EAF71F2237565500487517 /* SimpleVertex.glsl in Resources */,
 				29EAF6E82237529E00487517 /* Assets.xcassets in Resources */,
 				29EAF6E62237529C00487517 /* Main.storyboard in Resources */,
+				29EAF7402237837200487517 /* dungeon_01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +355,6 @@
 				29EAF6E02237529C00487517 /* AppDelegate.m in Sources */,
 				29EAF7392237688400487517 /* NorthWall.m in Sources */,
 				29EAF7162237556C00487517 /* Node.m in Sources */,
-				29EAF71D2237565500487517 /* BaseEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,15 @@
 //
-//  Node.m
+//  PNode.m
 //  Asn2
 //
 //  Created by Renz on 3/11/19.
 //  Copyright © 2019 Renz. All rights reserved.
 //
 
-#import "Node.h"
+#import "PNode.h"
 #import <OpenGLES/ES2/glext.h>
 
-@implementation Node {
+@implementation PNode {
     const char *_name;
     GLuint _vao;
     GLuint _vertexBuffer;
@@ -78,7 +78,7 @@
     
     // Render children
     GLKMatrix4 modelViewMatrix = GLKMatrix4Multiply(parentModelViewMatrix, [self modelMatrix]);
-    for (Node * child in self.children) {
+    for (PNode * child in self.children) {
         [child renderWithParentModelViewMatrix:modelViewMatrix];
     }
     
@@ -130,7 +130,7 @@
 
 - (void)updateWithDelta:(GLfloat)aDelta {
     // Update children
-    for (Node * child in self.children) {
+    for (PNode * child in self.children) {
         [child updateWithDelta:aDelta];
     }
 }

@@ -1,16 +1,16 @@
 //
-//  Node.h
-//  Asn2
+//  RWNode.h
+//  HelloOpenGL
 //
-//  Created by Renz on 3/11/19.
-//  Copyright © 2019 Renz. All rights reserved.
+//  Created by Main Account on 8/31/13.
+//  Copyright (c) 2013 Razeware LLC. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Vertex.h"
 #import <GLKit/GLKit.h>
 
-@interface Node : NSObject
+@interface RWNode : NSObject
 
 @property (nonatomic, strong) GLKBaseEffect *shader;
 @property (nonatomic, assign) GLKVector3 position;

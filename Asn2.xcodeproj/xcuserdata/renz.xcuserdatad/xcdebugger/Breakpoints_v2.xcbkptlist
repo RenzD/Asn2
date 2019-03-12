@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Asn2/Main/TestScene.m"
-            timestampString = "574056475.659005"
+            timestampString = "574062725.838279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-initWithShader:"
-            landmarkType = "7">
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "TestScene"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

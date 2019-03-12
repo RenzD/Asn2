@@ -63,10 +63,10 @@
   glAttachShader(_programHandle, vertexShaderName);
   glAttachShader(_programHandle, fragmentShaderName);
   
-  glBindAttribLocation(_programHandle, VertexAttribPosition, "a_Position");
-  glBindAttribLocation(_programHandle, VertexAttribColour, "a_Colour");
+    glBindAttribLocation(_programHandle, GLKVertexAttribPosition, "a_Position");
+    glBindAttribLocation(_programHandle, GLKVertexAttribColor, "a_Colour");
   glBindAttribLocation(_programHandle, VertexAttribTexCoord, "a_TexCoord");
-    glBindAttribLocation(_programHandle, VertexAttribNormal, "a_Normal");
+    glBindAttribLocation(_programHandle, GLKVertexAttribNormal, "a_Normal");
   
   glLinkProgram(_programHandle);
     
