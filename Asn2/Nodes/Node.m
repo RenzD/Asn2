@@ -7,7 +7,6 @@
 //
 
 #import "Node.h"
-#import <OpenGLES/ES2/glext.h>
 
 @implementation Node {
     const char *_name;
@@ -90,6 +89,7 @@
         
         _shader.transform.modelviewMatrix = parentModelViewMatrix;
         _shader.light0.position = GLKVector4Make(0, 0, 1, 0);
+        _shader.light1.position = GLKVector4Make(0, 1, 0, 0);
         
         // Prepare the effect
         _shader.transform.modelviewMatrix = modelViewMatrix;
@@ -97,8 +97,13 @@
         _shader.light0.enabled = GL_TRUE;
         _shader.light0.diffuseColor = _diffuseColor;
         
+        _shader.light1.enabled = GL_TRUE;
+        _shader.light1.diffuseColor = _diffuseColor;
+        
         _shader.light0.ambientColor = GLKVector4Make(1, 1, 1, 1.0);
         _shader.light0.specularColor = _specularColor;
+        _shader.light1.ambientColor = GLKVector4Make(.5, .5, .5, 1.0);
+        _shader.light1.specularColor = _specularColor;
         _shader.material.shininess = _shininess;
         _shader.lightingType = GLKLightingTypePerPixel;
         
@@ -159,15 +164,6 @@
     
     CGRect boundingBox = CGRectMake(lowerLeft.x, lowerLeft.y, upperRight.x - lowerLeft.x, upperRight.y - lowerLeft.y);
     return boundingBox;
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-}
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 }
 
 @end

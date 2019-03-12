@@ -17,6 +17,24 @@
     float _sceneOffset;
     NorthWall *_northWall;
 }
+- (instancetype)initWithShader:(GLKBaseEffect *)shader {
+    if ((self = [super initWithName:"TestScene" shader:shader vertices:nil vertexCount:0])) {
+        
+        // Create initial scene position
+        _gameArea = CGSizeMake(40, 80);
+        _sceneOffset = _gameArea.height/2 / tanf(GLKMathRadiansToDegrees(85.0/2));
+        self.position = GLKVector3Make(-_gameArea.width / 2, -_gameArea.height/2, -_sceneOffset);
+        self.rotationX = GLKMathDegreesToRadians(15);
+        
+        _northWall = [[NorthWall alloc] initWithShader:shader];
+        _northWall.position = GLKVector3Make(_gameArea.width / 2, _gameArea.height / 2, 0);
+        [self.children addObject:_northWall];
+        
+        //self.position = GLKVector3Make(0, -1, -10);
+        
+    }
+    return self;
+}
 /*
 - (instancetype)initWithShader:(GLKBaseEffect *)shader {
     if ((self = [super initWithName:"TestScene" shader:shader vertices:nil vertexCount:0])) {
@@ -39,24 +57,9 @@
     return self;
 }*/
 
-- (instancetype)initWithShader:(GLKBaseEffect *)shader {
-    if ((self = [super initWithName:"TestScene" shader:shader vertices:nil vertexCount:0])) {
-        
-        _gameArea = CGSizeMake(27, 48);
-        _sceneOffset = _gameArea.height/2/tanf(GLKMathDegreesToRadians(85/2));
-        self.position = GLKVector3Make(-_gameArea.width/2, -_gameArea.height/2, -_sceneOffset - 10);
-        
-        //Create NorthWall
-        _northWall = [[NorthWall alloc] initWithShader:shader];
-        _northWall.position = GLKVector3Make(_gameArea.width/2, _gameArea.height/2, 0);
-        //_northWall.matColour = GLKVector4Make(1, 1, 1, 1);
-        [self.children addObject:_northWall];
-
-        
-        //self.position = GLKVector3Make(0, -1, -10);
-        
-    }
-    return self;
+- (void)updateWithDelta:(GLfloat)aDelta {
+    [super updateWithDelta:aDelta];
+    //self.rotationY += GLKMathDegreesToRadians(15) * aDelta;
 }
 
 @end

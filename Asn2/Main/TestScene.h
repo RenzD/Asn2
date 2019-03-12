@@ -10,8 +10,6 @@
 
 @interface TestScene : Node
 
-
 - (instancetype)initWithShader:(GLKBaseEffect *)shader;
-
 
 @end

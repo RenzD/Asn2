@@ -12,5 +12,4 @@
 
 @interface ViewController : GLKViewController
 
-
 @end

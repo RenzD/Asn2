@@ -7,7 +7,8 @@
 //
 
 #import "Node.h"
-#import "Vertex.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NorthWall : Node
 
@@ -15,3 +16,6 @@
 (GLKBaseEffect *)shader;
 
 @end
+
+NS_ASSUME_NONNULL_END
+

@@ -16,13 +16,14 @@
 		29EAF6F82237529E00487517 /* Asn2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF6F72237529E00487517 /* Asn2Tests.m */; };
 		29EAF7032237529E00487517 /* Asn2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7022237529E00487517 /* Asn2UITests.m */; };
 		29EAF7162237556C00487517 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7152237556C00487517 /* Node.m */; };
-		29EAF71E2237565500487517 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF71B2237565500487517 /* SimpleFragment.glsl */; };
-		29EAF71F2237565500487517 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF71C2237565500487517 /* SimpleVertex.glsl */; };
-		29EAF7262237572B00487517 /* DisjointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7212237572A00487517 /* DisjointSet.cpp */; };
-		29EAF7282237572B00487517 /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7252237572B00487517 /* maze.cpp */; };
 		29EAF73522375EF300487517 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF73422375EF300487517 /* TestScene.m */; };
 		29EAF7392237688400487517 /* NorthWall.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EAF7382237688400487517 /* NorthWall.m */; };
 		29EAF7402237837200487517 /* dungeon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 29EAF73F2237837200487517 /* dungeon_01.png */; };
+		29F046392237A1B700BC965A /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F046372237A1B600BC965A /* Director.m */; };
+		29F0463C2237A2DA00BC965A /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29F0463A2237A2DA00BC965A /* SimpleFragment.glsl */; };
+		29F0463D2237A2DA00BC965A /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 29F0463B2237A2DA00BC965A /* SimpleVertex.glsl */; };
+		29F046422237A32800BC965A /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F0463E2237A32800BC965A /* maze.cpp */; };
+		29F046432237A32800BC965A /* DisjointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F046402237A32800BC965A /* DisjointSet.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,17 +63,19 @@
 		29EAF7142237556C00487517 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		29EAF7152237556C00487517 /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		29EAF717223755C600487517 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
-		29EAF71B2237565500487517 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Asn2/SimpleFragment.glsl; sourceTree = SOURCE_ROOT; };
-		29EAF71C2237565500487517 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Asn2/SimpleVertex.glsl; sourceTree = SOURCE_ROOT; };
-		29EAF7212237572A00487517 /* DisjointSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DisjointSet.cpp; path = Asn2/DisjointSet.cpp; sourceTree = SOURCE_ROOT; };
-		29EAF7222237572A00487517 /* maze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = maze.h; path = Asn2/maze.h; sourceTree = SOURCE_ROOT; };
-		29EAF7242237572B00487517 /* DisjointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisjointSet.h; path = Asn2/DisjointSet.h; sourceTree = SOURCE_ROOT; };
-		29EAF7252237572B00487517 /* maze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = maze.cpp; path = Asn2/maze.cpp; sourceTree = SOURCE_ROOT; };
 		29EAF73322375EF300487517 /* TestScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
 		29EAF73422375EF300487517 /* TestScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
 		29EAF7372237688400487517 /* NorthWall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NorthWall.h; sourceTree = "<group>"; };
 		29EAF7382237688400487517 /* NorthWall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NorthWall.m; sourceTree = "<group>"; };
 		29EAF73F2237837200487517 /* dungeon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_01.png; sourceTree = "<group>"; };
+		29F046372237A1B600BC965A /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		29F046382237A1B600BC965A /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		29F0463A2237A2DA00BC965A /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		29F0463B2237A2DA00BC965A /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		29F0463E2237A32800BC965A /* maze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maze.cpp; sourceTree = "<group>"; };
+		29F0463F2237A32800BC965A /* DisjointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisjointSet.h; sourceTree = "<group>"; };
+		29F046402237A32800BC965A /* DisjointSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisjointSet.cpp; sourceTree = "<group>"; };
+		29F046412237A32800BC965A /* maze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maze.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +126,6 @@
 		29EAF6DD2237529C00487517 /* Asn2 */ = {
 			isa = PBXGroup;
 			children = (
-				29EAF73F2237837200487517 /* dungeon_01.png */,
 				29EAF7362237682D00487517 /* Models */,
 				29EAF73222375EC800487517 /* Main */,
 				29EAF7202237571D00487517 /* MazeStart */,
@@ -172,9 +174,9 @@
 		29EAF7182237564500487517 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
+				29F0463A2237A2DA00BC965A /* SimpleFragment.glsl */,
+				29F0463B2237A2DA00BC965A /* SimpleVertex.glsl */,
 				29EAF717223755C600487517 /* Vertex.h */,
-				29EAF71B2237565500487517 /* SimpleFragment.glsl */,
-				29EAF71C2237565500487517 /* SimpleVertex.glsl */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -182,10 +184,10 @@
 		29EAF7202237571D00487517 /* MazeStart */ = {
 			isa = PBXGroup;
 			children = (
-				29EAF7212237572A00487517 /* DisjointSet.cpp */,
-				29EAF7242237572B00487517 /* DisjointSet.h */,
-				29EAF7252237572B00487517 /* maze.cpp */,
-				29EAF7222237572A00487517 /* maze.h */,
+				29F046402237A32800BC965A /* DisjointSet.cpp */,
+				29F0463F2237A32800BC965A /* DisjointSet.h */,
+				29F0463E2237A32800BC965A /* maze.cpp */,
+				29F046412237A32800BC965A /* maze.h */,
 			);
 			path = MazeStart;
 			sourceTree = "<group>";
@@ -193,6 +195,8 @@
 		29EAF73222375EC800487517 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				29F046382237A1B600BC965A /* Director.h */,
+				29F046372237A1B600BC965A /* Director.m */,
 				29EAF73322375EF300487517 /* TestScene.h */,
 				29EAF73422375EF300487517 /* TestScene.m */,
 			);
@@ -204,6 +208,7 @@
 			children = (
 				29EAF7372237688400487517 /* NorthWall.h */,
 				29EAF7382237688400487517 /* NorthWall.m */,
+				29EAF73F2237837200487517 /* dungeon_01.png */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,7 +280,6 @@
 				TargetAttributes = {
 					29EAF6DA2237529C00487517 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = XP8JJ27LQX;
 						ProvisioningStyle = Automatic;
 					};
 					29EAF6F22237529E00487517 = {
@@ -318,11 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				29EAF6EB2237529E00487517 /* LaunchScreen.storyboard in Resources */,
-				29EAF71E2237565500487517 /* SimpleFragment.glsl in Resources */,
-				29EAF71F2237565500487517 /* SimpleVertex.glsl in Resources */,
 				29EAF6E82237529E00487517 /* Assets.xcassets in Resources */,
 				29EAF6E62237529C00487517 /* Main.storyboard in Resources */,
 				29EAF7402237837200487517 /* dungeon_01.png in Resources */,
+				29F0463C2237A2DA00BC965A /* SimpleFragment.glsl in Resources */,
+				29F0463D2237A2DA00BC965A /* SimpleVertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,13 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29EAF7282237572B00487517 /* maze.cpp in Sources */,
-				29EAF7262237572B00487517 /* DisjointSet.cpp in Sources */,
 				29EAF6E32237529C00487517 /* ViewController.m in Sources */,
 				29EAF6EE2237529E00487517 /* main.m in Sources */,
+				29F046392237A1B700BC965A /* Director.m in Sources */,
+				29F046432237A32800BC965A /* DisjointSet.cpp in Sources */,
 				29EAF73522375EF300487517 /* TestScene.m in Sources */,
 				29EAF6E02237529C00487517 /* AppDelegate.m in Sources */,
 				29EAF7392237688400487517 /* NorthWall.m in Sources */,
+				29F046422237A32800BC965A /* maze.cpp in Sources */,
 				29EAF7162237556C00487517 /* Node.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,7 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP8JJ27LQX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Asn2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -541,7 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP8JJ27LQX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Asn2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
